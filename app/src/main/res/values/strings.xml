@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Nice dogs</string>
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_search">Search</string>
+    <string name="breed_detail">Breed Detail</string>
+    <string name="breed_image">Breed image</string>
+    <string name="category">Category</string>
+    <string name="group">Group</string>
+    <string name="list_view">List/Grid View</string>
+    <string name="name">Name</string>
+    <string name="no_result_found">No results found</string>
+    <string name="origin">Origin</string>
+    <string name="search_for_a_breed_hint">Search for a breed</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="temperament">Temperament</string>
+    <string name="try_again">Try Again</string>
+</resources>

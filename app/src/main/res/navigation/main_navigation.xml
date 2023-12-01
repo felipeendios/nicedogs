@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_breeds">
+
+    <fragment
+        android:id="@+id/navigation_breeds"
+        android:name="com.challenge.nicedogs.ui.fragments.breedslist.BreedsListFragment"
+        android:label="@string/bottom_navigation_home"
+        tools:layout="@layout/fragment_breeds">
+        <action
+            android:id="@+id/action_navigation_breeds_to_navigation_breed_detail"
+            app:destination="@id/navigation_breed_detail">
+            <argument
+                android:name="breedID"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.challenge.nicedogs.ui.fragments.breedssearch.SearchFragment"
+        android:label="@string/bottom_navigation_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_breed_detail"
+            app:destination="@id/navigation_breed_detail">
+            <argument
+                android:name="breedId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <dialog
+        android:id="@+id/navigation_breed_detail"
+        android:name="com.challenge.nicedogs.ui.fragments.breeddetail.BreedDetailFragment"
+        android:label="@string/breed_detail"
+        tools:layout="@layout/fragment_breed_detail" />
+</navigation>

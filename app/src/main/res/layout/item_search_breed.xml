@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/textViewBreedNameLabel"
+        style="@style/BreedInfoLabel"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textViewBreedNameValue"
+        style="@style/BreedInfoValue"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textViewBreedGroupLabel"
+        style="@style/BreedInfoLabel"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textViewBreedGroupValue"
+        style="@style/BreedInfoValue"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textViewBreedOriginLabel"
+        style="@style/BreedInfoLabel"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textViewBreedOriginValue"
+        style="@style/BreedInfoValue"
+        tools:text="Beagle" />
+
+</LinearLayout>

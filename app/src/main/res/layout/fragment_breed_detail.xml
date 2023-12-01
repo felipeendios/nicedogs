@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_8dp">
+
+    <TextView
+        android:id="@+id/textview_breed_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_name_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_breed_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_category_label"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textview_breed_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_category_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_name_value" />
+
+    <TextView
+        android:id="@+id/textview_breed_category_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_origin_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_category_label"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textview_breed_origin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/origin"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_origin_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_category_value" />
+
+    <TextView
+        android:id="@+id/textview_breed_origin_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_temperament_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_origin_label"
+        tools:text="Beagle" />
+
+    <TextView
+        android:id="@+id/textview_breed_temperament_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperament"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textview_breed_temperament_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_origin_value" />
+
+    <TextView
+        android:id="@+id/textview_breed_temperament_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_breed_temperament_label"
+        tools:text="Beagle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
