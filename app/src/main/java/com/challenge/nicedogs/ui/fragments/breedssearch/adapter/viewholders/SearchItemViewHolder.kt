@@ -3,12 +3,12 @@ package com.challenge.nicedogs.ui.fragments.breedssearch.adapter.viewholders
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.challenge.nicedogs.databinding.ItemSearchBreedBinding
+import com.challenge.nicedogs.databinding.ItemSearchBinding
 import com.challenge.nicedogs.domain.models.BreedDomainModel
 import com.challenge.nicedogs.ui.fragments.BreedsEventHandler
 
 class SearchItemViewHolder(
-    private val view: ItemSearchBreedBinding,
+    private val view: ItemSearchBinding,
     private val eventHandler: BreedsEventHandler
 ) : RecyclerView.ViewHolder(view.root) {
 

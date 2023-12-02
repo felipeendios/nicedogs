@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.challenge.nicedogs.databinding.ItemSearchBreedBinding
+import com.challenge.nicedogs.databinding.ItemSearchBinding
 import com.challenge.nicedogs.domain.models.BreedDomainModel
 import com.challenge.nicedogs.ui.fragments.BreedsEventHandler
 import com.challenge.nicedogs.ui.fragments.breedssearch.adapter.viewholders.SearchItemViewHolder
@@ -17,7 +17,7 @@ class SearchAdapter(
 ) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val binding = ItemSearchBreedBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemSearchBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SearchItemViewHolder(binding, breedsEventHandler)
     }
 
